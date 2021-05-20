@@ -5,7 +5,7 @@ html{
 
 #container{
     height: 500px;
-    width: 500px;
+    width: 600px;
     background-image: linear-gradient(to left bottom, #3f11e5, #b700b4, #e6007c, #f60049, #f00d17);
     margin: 100px auto;
     padding: 10px;
@@ -17,7 +17,7 @@ html{
 #score{
     height: 30px;
     width: auto;
-    background-color: #75dea6;
+    background-color: #0dfdf1;
     position: absolute;
     right: 10px;
     padding: 10px 10px 0px 10px;
@@ -26,7 +26,7 @@ html{
 #correct{
     height: 30px;
     width: auto;
-    background-color: #21ec80;
+    background-color: #16ff22;
     position: absolute;
     left: 45%;
     padding: 10px 10px 0px 10px;
@@ -38,6 +38,7 @@ html{
     width: auto;
     background-color: #ff0808;
     position: absolute;
+    color: white;
     left: 45%;
     padding: 10px 10px 0px 10px;
     display: none;
@@ -47,7 +48,8 @@ html{
     height: 120px;
     width: 400px;
     background-color: #22e4da;
-    font-size: 100px;
+    font-size: 80px;
+    line-height: 120px;
     text-align: center;
     align-items: center;
     margin: 80px auto 10px auto;
@@ -84,12 +86,66 @@ html{
     justify-content: center;
     text-align: center;
     line-height: 95px;
+    position: relative;
+    transition: all 0.2s;
 }
 
-.box:hover{
+.box:hover, #startreset:hover{
     background-color: #3f11e5;
     color: white;
 }
 
+
+.box:active, #startreset:active{
+    top: 4px;
+    background-color: #6b81aa;
+}
+
+#startreset{
+    height: 40px;
+    width: 100px;
+    background-color: white;
+    cursor: pointer;
+    font-size: 20px;
+    text-align: center;
+    line-height: 35px;
+    transition: all 0.2s;
+    position: relative;
+    margin: 20px auto;
+    border-radius: 8%;
+    padding: 5px;
+}
+
+#timeremaining{
+    height: 40px;
+    width: 200px;
+    background-color: rgba(3, 216, 99, 0.87);
+    font-size: 20px;
+    text-align: center;
+    line-height: 35px;
+    position: absolute;
+    top: 440px;
+    right: 10px;
+    border-radius: 6%;
+    padding: 5px;
+    display: none;
+}
+
+#gameover{
+    height: 200px;
+    width: 500px;
+    background-color: rgba(245, 53, 0, 1);
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute;
+    font-size: 30px;
+    line-height: 46px;
+    top: 120px;
+    z-index: 2;
+    left: 60px;
+    display: none;
+    border-radius: 5%;
+}
 
 
